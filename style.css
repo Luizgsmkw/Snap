@@ -17,7 +17,7 @@ header {
     align-items: center;
 }
 
-.hamburguer {
+.hamburguer, .imagem-principal-mobile {
     display: none;
 }
 
@@ -81,6 +81,7 @@ a:hover {
 }
 
 .lista-features {
+    position: fixed;
     list-style: none;
     margin-top: 10px;
     height: 150px;
@@ -112,12 +113,14 @@ a:hover {
 
 .lista-company {
     list-style: none;
+    position: fixed;
     margin-top: 10px;
     height: 110px;
     width: 115px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    position: sticky;
     align-items: center;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -130,6 +133,66 @@ a:hover {
 .a-company{
    display: flex;
    justify-content: left;
+}
+
+.dados-container {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.imagem-principal-container {
+    width: 45%;
+    padding-top: 70px;
+}
+
+.informacoes-container{
+    width: 55%;
+    padding-left: 50px;
+    padding-top: 150px;
+}
+
+
+.imagem-principal-desktop {
+    width: 500px;
+    height: 570px;
+}
+
+.informacoes-titulo {
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+}
+
+.informacoes-paragrafo {
+    color: hsl(0, 0%, 41%);
+    width: 400px;
+    text-align: justify;
+    line-height: 22px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.informacoes-button {
+    height: 50px;
+    width: 160px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 90px;
+}
+
+.patrocinadores {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 500px;
+}
+
+.patrocinadores img {
+    margin-right: 25px;
 }
 
 
@@ -155,27 +218,92 @@ a:hover {
         display: initial;
         display: flex;
         flex-direction: column;
-        margin-top: 230px;
+        margin-top: 600px;
         align-items: center;
-        background-color: brown;
-        width: 200px;
-        height: 200px;
+        width: 220px;
+        height: 560px;
         position: fixed;
         margin-left: 70%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         
     }
 
    .nav-bar-list{
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 200px;
-    background-color: aqua;
+    height: 200px;
+    padding-left: 10px;
+    padding-top: 20px;
    }
-
-  
 
    .nav-bar-div{
     flex-direction: column;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    position: relative;
+   }
+
+
+   .div-features, .div-company, .careers {
+    margin-bottom: 15px;
    }
     
+   .lista-visivel {
+    position: static;
+   }
+
+   .lista-visivel2 {
+    position: static;
+   }
+
+   .login{
+    margin-bottom: 10px;
+   }
+
+   .registro{
+    width: 120px;
+   }
+
+   .lista-features {
+    margin-left: -0px;
+    box-shadow: none;
+}
+
+.lista-company {
+    list-style: none;
+    margin-top: 10px;
+    height: 110px;
+    width: 115px;
+    box-shadow: none;
+}
+
+}
+
+@media(max-width: 650px){
+
+    .navBarResponsivo{
+        margin-left: 63%;
+    }
+
+}
+
+@media(max-width: 520px){
+
+    .navBarResponsivo{
+        margin-left: 54%;
+    }
+
+}
+
+@media(max-width: 420px){
+
+    .navBarResponsivo{
+        margin-left: 45%;
+    }
 
 }
