@@ -81,7 +81,6 @@ a:hover {
 }
 
 .lista-features {
-    position: fixed;
     list-style: none;
     margin-top: 10px;
     height: 150px;
@@ -225,7 +224,7 @@ a:hover {
         position: fixed;
         margin-left: 70%;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        
+        background-color: white;
     }
 
    .nav-bar-list{
@@ -284,6 +283,7 @@ a:hover {
 
 }
 
+
 @media(max-width: 650px){
 
     .navBarResponsivo{
@@ -291,6 +291,7 @@ a:hover {
     }
 
 }
+
 
 @media(max-width: 520px){
 
@@ -305,5 +306,82 @@ a:hover {
     .navBarResponsivo{
         margin-left: 45%;
     }
+    
+    .imagem-principal-desktop {
+        display: none;
+    }
+
+    .imagem-principal-mobile {
+        display: initial;
+    }
+
+    .dados-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .informacoes-container {
+        order: 2;
+    }
+
+    .imagem-principal-container{
+        order: 1;
+        width: 100%;
+    }
+
+    .imagem-principal-mobile{
+        width: 100%;
+    }
+
+    .informacoes-container{
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informacoes-titulo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 33px;
+    }
+
+    .informacoes-paragrafo {
+        color: hsl(0, 0%, 41%);
+        width: 350px;
+        text-align: center;
+        line-height: 22px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .informacoes-button {
+        height: 50px;
+        width: 160px;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+
+    .patrocinadores {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 70px;
+    }
+    
+    .patrocinadores img {
+        width: 70px;
+        height: 25px;
+        margin-right: 0px;
+    }
+    
 
 }
